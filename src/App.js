@@ -48,7 +48,7 @@ class App extends React.Component {
       // console.log(response);
 
       //API call to get the current and 3 days forecast weather report
-      const forecast_api_call= await fetch(`https://api.apixu.com/v1/forecast.json?key=${key}&q=${city}&days=4`);
+      const forecast_api_call= await fetch(`http://api.weatherstack.com/current?access_key=bd7462a92481a022d617c5b65c55c032&query=Budapest&days=4`);
       const forecast_response=await forecast_api_call.json();
 
       //storing the forecast record in an array
