@@ -48,7 +48,7 @@ class App extends React.Component {
       // console.log(response);
 
       //API call to get the current and 3 days forecast weather report
-      const forecast_api_call= await fetch(`http://api.weatherstack.com/current?access_key=bd7462a92481a022d617c5b65c55c032&query=Budapest&days=4`);
+      const forecast_api_call= await fetch(`https://api.weatherstack.com/current?access_key=bd7462a92481a022d617c5b65c55c032&query=Budapest&days=4`);
       const forecast_response=await forecast_api_call.json();
 
       //storing the forecast record in an array
@@ -87,7 +87,7 @@ class App extends React.Component {
           date_record.push(back_date);
 
           //API call to access historical data. The data is fetched for each day in the while loop
-          let new_api=await fetch(`https://api.apixu.com/v1/history.json?key=${key}&q=${city}&dt=${back_date}`);
+          let new_api=await fetch(`https://api.weatherstack.com/current?access_key=bd7462a92481a022d617c5b65c55c032&query=Budapest&days=4`);
           let result=await new_api.json();
 
 
