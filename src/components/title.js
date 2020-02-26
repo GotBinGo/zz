@@ -5,7 +5,7 @@ import React from 'react';
 
 const Title = props => {
   return (
-    <div className="jumbotron header">
+    <div className="jumbotron header sticky-top">
       <div className="row justify-content-center">
         <h1>Zone Weather</h1>
       </div>
