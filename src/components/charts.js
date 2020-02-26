@@ -26,9 +26,9 @@ const getLastSevenDays = () => {
 
 const Chart = props => {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6 chart">
+    <div className="container-fluid">
+      <div className="row justify-content-center">
+        <div className="col-md-5 chart shadow p-3 mb-5 bg-white rounded">
           <Line
             data={{
               labels: getHours (),
@@ -86,7 +86,7 @@ const Chart = props => {
             }}
           />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-5 offset-md-1 shadow p-3 mb-5 bg-white rounded">
           <Bar
             data={{
               labels: getLastSevenDays (),
