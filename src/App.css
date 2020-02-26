@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  background-color: #7dba41;
+  color: white;
+}
+
+.chart{
+  min-height: 500px;
+}
